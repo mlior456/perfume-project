@@ -1,0 +1,155 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: 'Montserrat', 'Fraunces', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--cream);
+}
+
+img {
+    width: 325px;
+    height: 425px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.main-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.background-image {
+    width: 325px;
+    height: 425px;
+    border: 1px solid hidden;
+}
+
+.info {
+    width: 325px;
+    height: 425px;
+    border: 1px solid hidden;
+    background-color: var(--white);
+    text-align: left;
+    padding-left: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h6 {
+    letter-spacing: 5px;
+    text-align: left;
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.perfume-info {
+    line-height: 24px;
+    width: 75%;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    font-weight: 100;
+}
+
+.header {
+    font-family: Fraunces;
+    font-weight: 700;
+    width: 60%;
+    color: var(--very-dark-blue);
+    line-height: 35px;
+}
+
+.prices {
+    font-size: 2.4rem;
+    font-family: Fraunces;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    color: var(--dark-cyan);
+}
+
+del {
+    font-size: 14px;
+    padding-left: 20px;
+    align-items: center;
+    color: var(--dark-grayish-blue);
+    font-family: sans-serif;
+}
+
+button {
+    width: calc(325px - 72px);
+    margin-top: 18px;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    padding-right: 5px;
+    position: relative;
+}
+
+.attribution {
+    font-size: 14px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .background-image {
+        width: 350px;
+        position: relative;
+    }
+    img {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        max-height: 65%;
+    }
+    .info {
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        margin-top: -150px;
+        height: 385px;
+    }
+    .header {
+        width: 90%;
+    }
+    h6 {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+}
+
